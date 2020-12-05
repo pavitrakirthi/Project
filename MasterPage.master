@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style4
+        {
+            font-weight: bold;
+            font-style: italic;
+            font-size: xx-large;
+        }
+        .style5
+        {
+            color: #000000;
+            font-family: Algerian;
+        }
+        .style6
+        {
+            color: #00CC00;
+            font-family: Algerian;
+        }
+        .style8
+        {
+            color: #990000;
+            font-family: Algerian;
+        }
+        .style9
+        {
+            color: #66CCFF;
+            font-family: Algerian;
+        }
+        .style10
+        {
+            color: #0000CC;
+            font-family: Algerian;
+        }
+        .style11
+        {
+            color: #FF3300;
+            font-family: Algerian;
+        }
+        .style12
+        {
+            color: #00FF00;
+            font-family: Algerian;
+        }
+        .style13
+        {
+            color: #009900;
+            font-family: Algerian;
+        }
+        </style>
+</head>
+<body background="Images/001.jpg">
+    <form id="form1" runat="server">
+    <div style="height: 271px">
+        <br />
+        <asp:Image ID="Image1" runat="server" Height="103px" 
+            ImageUrl="~/Images/logo.png" Width="150px" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style4"><span class="style12">T</span><span 
+            class="style13">hrash</span><span class="style6"> </span>
+        <span class="style11">T</span><span class="style8">o</span><span class="style5"> </span>
+        <span class="style10">T</span><span class="style9">reasure </span>
+        <asp:Image 
+            ID="Image2" runat="server" Height="60px" ImageUrl="~/Images/tree.jpg" 
+            Width="80px" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <asp:Menu ID="Menu1" runat="server" onmenuitemclick="Menu1_MenuItemClick1" 
+            Orientation="Horizontal" 
+            style="font-weight: 700; font-style: italic; font-size: x-large">
+            <DynamicHoverStyle BackColor="#3399FF" BorderColor="#FF6666" />
+            <DynamicMenuItemStyle BackColor="#FF9966" BorderColor="#FFFF66" />
+            <DynamicMenuStyle BackColor="#FF5050" BorderColor="Aqua" />
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Categories.aspx" Text="Categories" 
+                    Value="Categories">
+                    <asp:MenuItem NavigateUrl="~/Domestic Waste.aspx" Text="Domestic Waste" 
+                        Value="Domestic Waste"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Commercial Waste.aspx" Text="Commercial waste" 
+                        Value="Commercial waste"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Agriculture.aspx" Text="Agriculture waste" 
+                        Value="Agriculture waste"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Industrial.aspx" Text="Industrial" 
+                        Value="Industrial"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/About Us.aspx" Text="About" Value="About">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Contact.aspx" Text="Contact" Value="Contact">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Login" Value="Login">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/admin.aspx" Text="Admin" Value="Admin">
+                </asp:MenuItem>
+                <asp:MenuItem Text="User Type" Value="User Type">
+                    <asp:MenuItem NavigateUrl="~/Agent.aspx" Text="Agent" Value="Agent">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/User.aspx" Text="User" Value="User"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BorderColor="#FF9900" />
+            <StaticMenuItemStyle BackColor="#FFCC00" BorderColor="#6600CC" 
+                ForeColor="Black" HorizontalPadding="30px" />
+            <StaticMenuStyle BackColor="Aqua" />
+            <StaticSelectedStyle BackColor="#CC0000" />
+        </asp:Menu>
+            <DynamicHoverStyle BackColor="#FFCC99" BorderColor="White" BorderStyle="Dashed" 
+                Font-Bold="True" Font-Names="Times New Roman" Font-Size="Medium" Height="20px" 
+                Width="150px" />
+            <DynamicMenuItemStyle BorderColor="#66FFFF" />
+            <DynamicMenuStyle BackColor="Aqua" />
+            <StaticHoverStyle BackColor="#FF9900" />
+            <StaticMenuItemStyle BackColor="#FFCC00" Font-Bold="True" Font-Italic="True" 
+                Font-Size="X-Large" ForeColor="Black" HorizontalPadding="40px" 
+                ItemSpacing="20px" />
+            <StaticMenuStyle BackColor="Red" />
+            <StaticSelectedStyle BackColor="#009900" BorderColor="Red" 
+                HorizontalPadding="20px" ItemSpacing="20px" />
+        </asp:Menu>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
