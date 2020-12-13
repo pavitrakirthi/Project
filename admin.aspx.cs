@@ -29,10 +29,12 @@ public partial class admin : System.Web.UI.Page
             if (dt.Rows[0][0].ToString() == "1")
             {
                 Response.Write("<script>alert('successfully logged In ')</script>");
+                Response.Redirect("Admin1.aspx");
             }
             else
             {
                 Response.Write("<script>alert('error in login')</script>");
+
             }
         }
         catch (Exception ex)
@@ -40,6 +42,6 @@ public partial class admin : System.Web.UI.Page
             Response.Write(ex.Message);
 
         }
-    }
 
+    }
 }

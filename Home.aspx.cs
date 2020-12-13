@@ -14,10 +14,10 @@ public partial class Home : System.Web.UI.Page
 
     protected void Timer1_Tick(object sender, EventArgs e)
     {
-        Random ran = new Random();
-        int i = ran.Next(1,5);
-        Image3.ImageUrl="~/images/"+ i.ToString() +" .jpg";
-
     }
 
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("About Us.aspx");
+    }
 }

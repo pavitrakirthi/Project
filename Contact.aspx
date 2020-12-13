@@ -32,7 +32,9 @@
         .style14
         {
             color: #FFFFFF;
-            font-size: large;
+            font-size: medium;
+            font-weight: bold;
+            font-style: italic;
         }
         .style16
         {
@@ -41,15 +43,25 @@
             font-weight: bold;
             font-style: italic;
         }
-        .style17
-        {
-            font-family: "Times New Roman", Times, serif;
-        }
         .style18
         {
             color: #FFFFFF;
             font-size: large;
             font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .style19
+        {
+            color: #FFFFFF;
+            font-size: large;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .style20
+        {
+            color: #FFFF00;
+            font-size: large;
             font-weight: bold;
             font-style: italic;
         }
@@ -64,17 +76,17 @@
 <p class="style18">
     Telephone No: 08023456856
 </p>
-    <p class="style14">
-        <i><b>
-        <asp:Label ID="Label1" runat="server" CssClass="style17" Text="Feed Back "></asp:Label>
-        </b></i>
-        <asp:TextBox ID="TextBox1" runat="server" Width="436px"></asp:TextBox>
+    <p class="style19">
+        Fax : 103245677
 </p>
+    <p class="style20">
+        &quot;Do Follow Us On the Social Media and Support Us&quot;</p>
+    <p class="style19">
+        Instagram : Thrash_To_Treasure</p>
+    <p class="style19">
+        Facebook : Thrash To Treasure</p>
     <p class="style14">
-        <asp:Button ID="Button1" runat="server" BackColor="Gray" Font-Bold="True" 
-            Font-Italic="True" Font-Names="Times New Roman" Font-Size="Large" 
-            ForeColor="White" Text="Submit" />
-</p>
+        &nbsp;</p>
 <p>
     <asp:Image ID="Image2" runat="server" Height="128px" 
         ImageUrl="~/Images/contact.png" Width="268px" CssClass="style13" />

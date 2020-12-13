@@ -39,11 +39,13 @@
         <asp:Label ID="Label1" runat="server" style="color: #FFFFFF" Text="Username"></asp:Label>
 &nbsp;<span class="style17">: </span>&nbsp;
         <asp:TextBox ID="txtuser" runat="server"></asp:TextBox>
+    &nbsp;&nbsp;&nbsp;
     </p>
     <p class="style15">
         <asp:Label ID="Label2" runat="server" style="color: #FFFFFF" Text="Password"></asp:Label>
 &nbsp;<span class="style17">: </span>&nbsp;&nbsp;
-        <asp:TextBox ID="txtpass" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtpass" runat="server" TextMode="Password"></asp:TextBox>
+    &nbsp;&nbsp;&nbsp;
     </p>
     <p class="style15">
         <asp:Button ID="Button1" runat="server" Height="31px" 
